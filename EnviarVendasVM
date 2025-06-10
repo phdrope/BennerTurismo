@@ -1,0 +1,46 @@
+
+Public Sub Main
+
+ARGO
+BANCODOBRASIL
+CAIXAECONOMICA
+CARTAOAGENCIA
+ENVISION
+LEMONTECH
+PETROBRAS
+TRANSPETRO
+WOOBA
+AMADEUS
+
+	Dim HdlPnr As String
+
+Dim buascarPNR As BPesquisa
+Set buascarPNR = NewQuery
+buascarPNR.Add("Select TOP 100 HANDLE ")
+buascarPNR.Add("From VM_PNRS (nolock) pnr  ")
+buascarPNR.Add("where ((pnr.SITUACAO = 1 AND pnr.CONCLUIDO = 'S') OR (((pnr.SITUACAO IN (4,6)) AND (pnr.EXPORTADO = 'N' and pnr.CONCLUIDO = 'S')))) ")
+buascarPNR.Add("and pnr.DATAEMISSAO IS NOT NULL AND (cast(pnr.DATAEMISSAO as date) < DATEADD(day, -1, GETDATE()) OR CONVERT(VARCHAR(05), DATEADD(hour, +0, getdate()), 108) > '18:00')")
+
+
+buascarPNR.Active = True
+
+Do While Not buascarPNR.EOF
+
+HdlPnr = buascarPNR.FieldByName("handle").AsString
+
+'------------------------------------ Enviar ao sistema ----------------------------------------------------------------
+	Dim Integration As Object
+On Error GoTo FAIL
+Set Integration = CreateBennerObject("TurVendas.IntegrarVendas")
+
+Integration.ExecByWhereVendas(" A.HANDLE IN (" + HdlPnr +") ")
+
+FAIL:Set Integration = Nothing
+
+	buascarPNR.Next
+Loop
+
+	buascarPNR.Active = False
+Set buascarPNR = Nothing
+
+End Sub
