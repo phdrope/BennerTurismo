@@ -1,0 +1,142 @@
+{
+	"newReservations": [
+		{
+			"locator": "RES046328-6170",
+			"status": "CONFIRMED",
+			"reservationId": "BDAX7WY",
+			"orderId": "BDAX7WU",
+			"date": "2025-06-17T18:33:07.494746",
+			"createdById": "us-east-1:af616652-e5a5-c45f-0dbe-bf4df8d42329",
+			"createdByName": "Evelyna Mileydi Rodriguez Luis",
+			"lastUpdateDate": "2025-06-17T18:33:07.494746",
+			"comment": "COOPERFORTE OS233 \nINSTRUÇÕES DE FATURAMENTO:\nOrientações Gerais:\n1.\tEmitir uma nota fiscal para cada Hospede (Unidade Habitacional):\n•\tInformando nome do(s) hospede(s),\n•\tDescrição das despesas, \n•\tPeríodo de hospedagem (Check in/Check Out);\n\n2.\tEm caso de NOSHOW, especificar na nota fiscal o período da primeira diária;\n3.\tPara os apartamentos duplos, deverá estar discriminado na nota fiscal o nome de cada hospede, com seus respectivos valores de hospedagem, inclusive o NOSHOW do hóspede que dividiria o quarto;\n4.\tNos extratos de hospedagem deverão constar: Nome de Hóspede, Descrição das despesas, Período de Hospedagem (IN/OUT) e Assinatura;\n5.\tDocumentação necessária: Nota fiscal, solicitação de reserva da Voetur, extrato com a assinatura do hospede ou a ficha da Embratur (FNRH), boleto bancário ou dados para depósito e quando autorizado o faturamento de extras, anexar as comandas assinadas pelo hospede;\n6.\tNão recebemos ou acessamos faturamento via link de internet;\n7.\tPrazo para vencimento de no mínimo 30 dias corridos a contar da data de emissão da nota fiscal/fatura.\n8.\tOs vencimentos dos boletos deverão ser exclusivamente nas datas 05, 15, 25 de cada mês.\nINFORMAÇÕES DE CONTATO: Atendimento: Telefone - (11) 2050-1050 - E-mail - atendimento.sp@voetur.com.br\n\nDADOS PARA EMISSÃO DA NOTA FISCAL:\nRazão Social: VOETUR TURISMO E REPRESENTAÇÕES LTDA. \nCNPJ: 01.017.250/0013-30 \nEndereço: ALAMEDA SANTOS, Nº 647            \nComplemento: CONJ 61 62 63 E 64\nBairro: CERQUEIRA CESAR\nCEP: 01.419-901   Cidade/UF: SÃO PAULO/SP.                                                                                   \nContato: Departamento de Conciliação \nTelefone: (61) 3771-3446 - E-MAIL: conciliacao@voetur.com.br \n\n \nViajante solicitou o parcelamento do pagamento em 1 vez, com cartão na bandeira MASTERCARD. (The guest has requested to pay in 1 installments) \n",
+			"traveller": {
+				"name": "MARCOS VINICIUS DE MELO ORRICO"
+			},
+			"client": {
+				"name": "CLIENTES PRIVADOS - VOETUR FILIAL SP",
+				"id": "587e301e-27e1-4a85-8fb4-9495e19e0bbf",
+				"vat": "01.017.250/0013-30",
+				"externalCode": null
+			},
+			"recebimento": {
+				"name": "Cartão de Crédito",
+				"type": "OFF_CC"
+			},
+			"pagamento": {
+				"name": "Cartão de Crédito",
+				"type": "OFF_CC"
+			},
+			"invoice": null,
+			"service": {
+				"type": "HOTEL",
+				"rooms": [
+					{
+						"name": "Quarto padrão com 1 cama de casal",
+						"id": "RES046328-6170/1",
+						"startDate": "2025-07-24",
+						"endDate": "2025-07-26",
+						"guests": [
+							{
+								"addressZipCode": null,
+								"lastName": "DE MELO ORRICO",
+								"country": null,
+								"addressComplement": null,
+								"ageQualifying": "ADULT",
+								"addressState": null,
+								"rgOrgaoEmissor": null,
+								"firstName": "MARCOS VINICIUS",
+								"passport": null,
+								"birthCertificate": null,
+								"nationality": null,
+								"phone": "+55 61996482950",
+								"rg": null,
+								"addressStreet": null,
+								"dob": null,
+								"cpf": "020.491.211-30",
+								"addressNumber": null,
+								"personId": null,
+								"addressDistrict": null,
+								"email": "marcos.orrico@cf.coop.br",
+								"age": null,
+								"primary": true,
+								"addressCity": null
+							}
+						],
+						"cancelled": false,
+						"price": {
+							"markup": {
+								"markupAppliesOnTaxes": false,
+								"percentage": 0,
+								"originalValue": 0,
+								"currency": "BRL",
+								"originalPercentage": 0,
+								"markupDisplayLocation": "DEFAULT",
+								"markupReductionAllowed": false,
+								"value": 0
+							},
+							"penalty": {
+								"value": 600.28,
+								"currency": "BRL"
+							},
+							"fee": null,
+							"taxes": {
+								"value": 54.55,
+								"currency": "BRL"
+							},
+							"totalReceivable": {
+								"value": 0,
+								"currency": "BRL"
+							},
+							"discountBreakdown": null,
+							"clientCommission": null,
+							"total": {
+								"value": 1145.55,
+								"currency": "BRL"
+							},
+							"highlights": [],
+							"discounts": null,
+							"exchangeRate": null,
+							"nights": [
+								{
+									"date": "2025-07-24",
+									"value": 573,
+									"currency": "BRL"
+								},
+								{
+									"date": "2025-07-25",
+									"value": 518,
+									"currency": "BRL"
+								}
+							],
+							"exchangeCurrency": null,
+							"commission": {
+								"value": 109.1,
+								"currency": "BRL",
+								"percentage": 0.1
+							},
+							"net": {
+								"value": 1091,
+								"currency": "BRL"
+							},
+							"recurringPayment": null,
+							"productPrice": {
+								"value": 1091,
+								"currency": "BRL"
+							}
+						},
+						"payment": null
+					}
+				],
+				"productId": "HOTEL_OMNI_6170",
+				"productName": "Ibis São Paulo Ibirapuera",
+				"startDate": "2025-07-24",
+				"endDate": "2025-07-26",
+				"cityName": "São Paulo"
+			},
+			"files": [],
+			"vcns": []
+		}
+	],
+	"requestId": "a424bd8a-e8b2-420d-9af2-6af5f499acb2"
+}
