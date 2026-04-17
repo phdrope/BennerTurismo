@@ -1,0 +1,6 @@
+Public Sub Main
+	Dim start As CSBusinessComponent
+	Set start = BusinessComponent.CreateInstance("ExportarScriptsPython.ExportaScripts, ExportarScriptsPython")
+	start.Execute("ExportarScritsPython")
+	Set start = Nothing
+End Sub
