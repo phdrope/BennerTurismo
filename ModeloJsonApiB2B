@@ -1,0 +1,139 @@
+{
+	"b2b.HotelBookingSearchRS": {
+		"b2b.Bookings": {
+			"@TourAgencyId": "30",
+			"b2b.Booking": {
+				"@Id": "19412732",
+				"@Rloc": "NA5WVX",
+				"@StatusCode": "1",
+				"@StatusDate": "2025-08-01 18:16:17",
+				"@CreatedAt": "2025-08-01 18:16:17",
+				"@LastUpdated": "2025-08-01 18:16:17",
+				"@Version": "0",
+				"@Source": "portal2",
+				"@ConciliationData": "false",
+				"@DispVip": "false",
+				"@CurrencyCode": "BRL",
+				"@CurrencyAvailCode": "BRL",
+				"@CurrencyRateValue": "1.0",
+				"b2b.Requestor": {
+					"b2b.POS": {
+						"@Id": "95676",
+						"@AgencyCode": "97808SB",
+						"b2b.Name": "LIGGA"
+					},
+					"b2b.Agent": {
+						"@Id": "264351",
+						"@AgencyCode": " ",
+						"b2b.UserName": "jessica.batista",
+						"b2b.Name": "JESSICA BATISTA ANDRADE"
+					},
+					"b2b.Agency": {
+						"@agencyCompanyId": "65630",
+						"@agencyChainCompanyId": "45423"
+					}
+				},
+				"b2b.TimeSpan": {
+					"@Start": "2025-08-11",
+					"@End": "2025-08-15"
+				},
+				"b2b.Room": {
+					"@Id": "9588",
+					"@Uuid": "a6da31fa-3c1f-4108-949c-8f25c1a51ed2",
+					"@ClassificationId": "1",
+					"b2b.Name": "STAND SGL",
+					"b2b.Size": 0
+				},
+				"b2b.Rate": {
+					"@Id": "601089",
+					"@AmountBeforeTax": "350.0",
+					"@CurrencyCode": "BRL",
+					"@Occupancy": "SGL",
+					"b2b.Name": "TARIFA  2025",
+					"b2b.BoardType": "CAFE DA MANHA"
+				},
+				"b2b.Total": {
+					"@AmountBeforeTax": "1400.0",
+					"@AmountAfterTax": "1470.0",
+					"@AgencyCommission": "0.0",
+					"@CurrencyCode": "BRL",
+					"b2b.Taxes": {
+						"b2b.Tax": {
+							"@Type": "ISS",
+							"@TypeCode": "iss",
+							"@Amount": "70.0",
+							"@AmountBase": "0.0",
+							"@Perc": "5.0",
+							"@Name": "ISS"
+						}
+					}
+				},
+				"b2b.Guests": {
+					"b2b.Guest": {
+						"@AgeQualifyingCode": "10",
+						"b2b.Name": "LUIS RENATO",
+						"b2b.Surname": "DE MOURA"
+					}
+				},
+				"b2b.Customer": {
+					"@Id": "563729",
+					"@AgencyCode": "488484",
+					"b2b.Name": "LIGGA",
+					"b2b.LegalCorporateName": "VOETUR TURISMO E REPRESENTACOES LTDA",
+					"b2b.TaxpayerIdentificationNumber": "01017250001330"
+				},
+				"b2b.Comments": "OS#1121",
+				"b2b.AdditionalInfo": "",
+				"b2b.Rules": {
+					"b2b.CancelPolicy": 24,
+					"b2b.CancelPolicyAbsoluteDeadline": "2025-08-10 14:00:00",
+					"b2b.CheckInTime": "14:00:00",
+					"b2b.CheckOutTime": "12:00:00",
+					"b2b.NoShow": "S",
+					"b2b.NoShowDate": "18:00:00",
+					"b2b.PolicyDescription": "Check-in permitido somente apos as 14:00:00 horas<BR>Check-out as 12:00:00 horas<BR><BR>Cancelamento permitido ate as 10/08/2025 14:00:00<BR><BR><BR><BR>No-show 18:00:00 horas<BR><BR><BR>Cancelamento : 24 horas que antecede o check-in.\r\nNo Show da 1  diaria ."
+				},
+				"b2b.PaymentInfo": {
+					"@Type": "cartaovi",
+					"@Description": "CARTAO VIRTUAL",
+					"b2b.Billing": {
+						"@Id": "522",
+						"@Code": "DI",
+						"$": "DEBITAR SOMENTE DIARIAS"
+					},
+					"b2b.PaymentCard": {
+						"b2b.Card": {
+							"b2b.CardBrand": {
+								"@code": "MC"
+							},
+							"b2b.CardHolder": "VOETUR TURISMO E REPRESENTACOES",
+							"b2b.CardNumber": "555155xxxxxx1701",
+							"b2b.CardOwner": "C"
+						},
+						"b2b.TransactionInfo": {
+							"@CheckoutFlow": "false"
+						}
+					}
+				},
+				"b2b.PropertyInfo": {
+					"@HotelId": "3252",
+					"@ChainId": "3251",
+					"@HotelChainCompanyId": "45272",
+					"b2b.Name": "VELEIROS MAR HOTEL",
+					"b2b.Phone": "(98) 21093000",
+					"b2b.Mail": "reservas@veleiroshotel.com.br",
+					"b2b.Address": {
+						"b2b.AddressDesc": "AV DOS HOLANDESES",
+						"b2b.Neighborhood": "PONTA DAREIA  ",
+						"b2b.PostalCode": 65075650,
+						"b2b.CityName": "SAO LUIS",
+						"b2b.CityCodeIBGE": 2111300,
+						"b2b.StateAbbreviation": "MA",
+						"b2b.CountryAbbreviation": "BR",
+						"b2b.CountryName": "BRASIL"
+					}
+				}
+			}
+		}
+	}
+}
