@@ -1,0 +1,6 @@
+Public Sub Main
+	Dim obj As Object
+	Set obj = CreateBennerObject("Benner.Turismo.Tasks.GerarCreClienteVendasOrfans")
+	obj.Executar()
+	Set obj = Nothing
+End Sub
