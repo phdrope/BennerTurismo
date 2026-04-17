@@ -1,0 +1,14 @@
+Integração - Máscaras de integração
+
+centrocusto->informacaocontrole(NOME TAG DO OBT);
+divisao->informacaocontrole(NOME TAG DO OBT);
+empenho->informacaocontrole(NOME TAG DO OBT);
+finalidade->informacaocontrole(NOME TAG DO OBT);
+motivo->informacaocontrole(NOME TAG DO OBT);
+nivelFuncionario->informacaocontrole(NOME TAG DO OBT);
+os->informacaocontrole(NOME TAG DO OBT);
+projeto->informacaocontrole(NOME TAG DO OBT);
+requisicao->informacaocontrole(NOME TAG DO OBT);
+solicitante->informacaocontrole(NOME TAG DO OBT);
+
+
