@@ -1,0 +1,34 @@
+Public Sub Main
+
+Dim q As BPesquisa
+Set q = NewQuery
+
+q.Active = False
+q.Clear
+q.Add(" SELECT HANDLE, BB_RLOC FROM BB_PNRS ")
+q.Active = True
+
+Dim obj As Object
+Set obj = CreateBennerObject("TurComum.PnrObj")
+obj.Inicializar(CurrentSystem, False)
+
+Dim sLog As String
+
+While Not q.EOF
+
+	On Error GoTo Erro
+
+		obj.ExcluirPnr(q.FieldByName("HANDLE").AsInteger)
+
+	Erro:
+		If (Err.Description <> "") Then sLog = sLog + q.FieldByName("BB_RLOC").AsString + " - " + Err.Description + vbLf
+
+	q.Next
+Wend
+
+Set q = Nothing
+Set obj = Nothing
+
+MsgBox(sLog)
+
+End Sub
