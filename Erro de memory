@@ -1,0 +1,10 @@
+'Devolve pedido para Elaborando sempre que ocorrer erro de memory, para que o sistema reprocesse a venda
+
+Dim erroMemory As BPesquisa
+Set erroMemory = NewQuery
+erroMemory.Add("UPDATE VM_PNRS SET SITUACAO = 1 WHERE MENSAGEM LIKE '%Out of memory%' AND SITUACAO = 3 ")
+
+erroMemory.ExecSQL
+
+erroMemory.Active = False
+Set erroMemory = Nothing
