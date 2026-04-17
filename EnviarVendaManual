@@ -1,0 +1,21 @@
+Public Sub Main
+
+	SessionVar("WHERE_VENDAS_TUR_INTEGRAR") = "A.LOCALIZADORA LIKE '1JA49O' "
+
+	Dim Integration As Object
+
+	On Error GoTo FAIL
+
+		Set Integration = CreateBennerObject("TurVendas.IntegrarVendas")
+
+		If VisibleMode Then
+			MsgBox(Integration.Exec(CurrentSystem))
+		Else
+			Integration.Exec(CurrentSystem)
+		End If
+
+	FAIL:
+
+		Set Integration = Nothing
+
+End Sub
